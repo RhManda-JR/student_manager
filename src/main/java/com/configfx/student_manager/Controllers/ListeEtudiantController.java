@@ -253,7 +253,7 @@ public class ListeEtudiantController implements Initializable {
                     .filter(etu -> etu.selectionProperty().get())
                     .toList();
             try {
-                if(PdfGenerator.exporterEtudiants(selectionnes)){
+                if(!PdfGenerator.exporterEtudiants(selectionnes)){
                     AlertFonc.showInfo("Succes","Liste imprimer !!");
                 }
             } catch (Exception ex) {
@@ -269,9 +269,11 @@ public class ListeEtudiantController implements Initializable {
         Etudiant Et1 = new Etudiant("M001000","Harim",Etudiant.Statut.NonPayer,"034 00 001 02","harim@gmail.com",Etudiant.Genre.Homme);
         Etudiant Et2 = new Etudiant("M001001","GasyPloaty",Etudiant.Statut.Payer,"037 70 001 45","gasyploaty@gmail.com",Etudiant.Genre.Femme);
         Etudiant Et3 = new Etudiant("M001002","Ljo",Etudiant.Statut.PayerAMoitier,"033 55 201 09","ljo@gmail.com",Etudiant.Genre.Homme);
+        Etudiant Et4 = new Etudiant("M001002","Ljo",Etudiant.Statut.PayerAMoitier,"033 55 201 09","ljo@gmail.com",Etudiant.Genre.Homme);
+        Etudiant Et5 = new Etudiant("M001002","Ljo",Etudiant.Statut.PayerAMoitier,"033 55 201 09","ljo@gmail.com",Etudiant.Genre.Homme);
 
 
-        listetudiant.addAll(Et1,Et2,Et3);
+        listetudiant.addAll(Et1,Et2,Et3,Et4,Et5);
 
         return listetudiant;
     }

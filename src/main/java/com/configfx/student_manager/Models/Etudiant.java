@@ -3,8 +3,6 @@ package com.configfx.student_manager.Models;
 
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.value.ObservableValue;
-import javafx.scene.control.CheckBox;
 
 public class Etudiant {
 
