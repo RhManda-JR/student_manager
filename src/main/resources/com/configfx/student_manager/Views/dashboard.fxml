@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="575.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.DashboardController">
+   <children>
+      <AnchorPane layoutX="118.0" layoutY="15.0" prefHeight="117.0" prefWidth="575.0" styleClass="dash-card1" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Label layoutX="7.0" layoutY="5.0" text="Tableau de bord" textFill="#7d7373" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Poppins Medium" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="10.0" layoutY="24.0" prefHeight="82.0" prefWidth="119.0" styleClass="carddash" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <Pane layoutX="6.0" layoutY="1.0" prefHeight="36.0" prefWidth="37.0" styleClass="icon-ToutEtudiant" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                  <Label layoutX="15.0" layoutY="45.0" text="Total Etudiant" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="59.666666666666664" text="2300" textFill="#605a5a" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins SemiBold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="157.0" layoutY="39.333333333333336" prefHeight="82.0" prefWidth="119.0" styleClass="carddash" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <Pane layoutX="6.0" layoutY="1.0" prefHeight="36.0" prefWidth="37.0" styleClass="icon-ToutMention" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                  <Label layoutX="15.0" layoutY="45.0" text="Tous les Mentions" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="59.666666666666664" text="150" textFill="#605a5a" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins SemiBold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="301.0" layoutY="32.666666666666664" prefHeight="82.0" prefWidth="119.0" styleClass="carddash" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <Pane layoutX="6.0" layoutY="1.0" prefHeight="36.0" prefWidth="37.0" styleClass="icon-ToutParcours" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                  <Label layoutX="15.0" layoutY="45.0" text="Toutes les Parcours" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="59.666666666666664" text="540" textFill="#605a5a" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins SemiBold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="438.0" layoutY="38.0" prefHeight="82.0" prefWidth="119.0" styleClass="carddash" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <Pane layoutX="6.0" layoutY="1.0" prefHeight="36.0" prefWidth="37.0" styleClass="icon-ToutStaff" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                  <Label layoutX="15.0" layoutY="45.0" text="Staff" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="59.666666666666664" text="400" textFill="#605a5a" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="15.0">
+                     <font>
+                        <Font name="Poppins SemiBold" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="128.0" prefHeight="242.0" prefWidth="275.0" styleClass="dash-card1" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="145.66666666666669" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <PieChart fx:id="piechart" layoutX="12.666666666666668" layoutY="24.666666666666664" prefHeight="207.0" prefWidth="253.0" title="Mention" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0" />
+            <Label layoutX="17.333333333333332" layoutY="9.0" prefHeight="17.0" prefWidth="66.0" text="Camember" textFill="#7d7373" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Poppins Medium" size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="5.0" layoutY="375.3333333333333" prefHeight="142.0" prefWidth="275.0" styleClass="image-box" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" />
+      <AnchorPane layoutX="285.3333333333333" layoutY="130.0" prefHeight="132.0" prefWidth="288.0" styleClass="dash-card1" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <Label layoutX="12.0" layoutY="5.0" prefHeight="17.0" prefWidth="109.0" text="Information General" textFill="#7d7373" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Poppins Medium" size="10.0" />
+               </font>
+            </Label>
+            <AreaChart fx:id="areachart" layoutX="21.0" layoutY="7.0" prefHeight="150.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+              <xAxis>
+                <CategoryAxis prefHeight="17.0" prefWidth="228.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="285.33333333333337" layoutY="255.33333333333334" prefHeight="248.0" prefWidth="288.0" styleClass="dash-card1" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="300.0">
+         <children>
+            <Label layoutX="14.666666666666668" layoutY="8.666666666666666" prefHeight="17.0" prefWidth="84.0" text="Action recente" textFill="#7d7373" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Poppins Medium" size="10.0" />
+               </font>
+            </Label>
+            <VBox layoutX="4.666666666666667" layoutY="24.666666666666664" prefHeight="230.0" prefWidth="280.0" spacing="4.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="23.0">
+               <children>
+                  <AnchorPane prefHeight="48.0" prefWidth="278.0" styleClass="box-action" stylesheets="@../src/style/ligthMode.css">
+                     <children>
+                        <Pane layoutX="17.0" layoutY="13.0" prefHeight="21.0" prefWidth="21.0" styleClass="icon-adduser" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0" />
+                        <Label layoutX="53.0" layoutY="5.0" text="Ajout" textFill="#5cd1af" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font name="Poppins Medium" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="19.0" prefHeight="12.0" prefWidth="211.0" text="Ajout d’etudiant : Mention Mathematique , parcour MISS" textFill="#6d6d6d" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="Poppins Regular" size="8.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="29.0" prefHeight="12.0" prefWidth="20.0" text="20+" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="53.0">
+                           <font>
+                              <Font name="Poppins Bold" size="8.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="48.0" prefWidth="278.0" styleClass="box-action" stylesheets="@../src/style/ligthMode.css">
+                     <children>
+                        <Pane layoutX="17.0" layoutY="15.0" prefHeight="21.0" prefWidth="21.0" styleClass="icon-edituser" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0" />
+                        <Label layoutX="53.0" layoutY="5.0" text="Modification" textFill="#339af0" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font name="Poppins Medium" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="19.0" prefHeight="12.0" prefWidth="211.0" text="Ajout d’etudiant : Mention Mathematique , parcour MISS" textFill="#6d6d6d" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="Poppins Regular" size="8.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="29.0" prefHeight="12.0" prefWidth="20.0" text="20+" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="53.0">
+                           <font>
+                              <Font name="Poppins Bold" size="8.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="48.0" prefWidth="278.0" styleClass="box-action" stylesheets="@../src/style/ligthMode.css">
+                     <children>
+                        <Pane layoutX="14.0" layoutY="15.0" prefHeight="21.0" prefWidth="21.0" styleClass="icon-suppuser" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="13.0" />
+                        <Label layoutX="53.0" layoutY="5.0" text="Suppression" textFill="#dd0b0b" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font name="Poppins Medium" size="10.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="19.0" prefHeight="12.0" prefWidth="211.0" text="Ajout d’etudiant : Mention Mathematique , parcour MISS" textFill="#6d6d6d" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="20.0">
+                           <font>
+                              <Font name="Poppins Regular" size="8.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="63.0" layoutY="29.0" prefHeight="12.0" prefWidth="20.0" text="20+" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="53.0">
+                           <font>
+                              <Font name="Poppins Bold" size="8.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

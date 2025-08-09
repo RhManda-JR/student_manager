@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="511.0" prefWidth="575.0" styleClass="container" stylesheets="@../src/style/ligthMode.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.ParametreController">
+   <children>
+      <Label layoutX="16.0" layoutY="9.0" text="Parametre" textFill="#00000073" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="9.0">
+         <font>
+            <Font name="Poppins Bold" size="12.0" />
+         </font>
+      </Label>
+      <Pane layoutX="17.0" layoutY="51.0" prefHeight="100.0" prefWidth="100.0" styleClass="image-profile" AnchorPane.leftAnchor="16.0" />
+      <Label layoutX="128.66666666666666" layoutY="82.66666666666666" prefHeight="20.0" prefWidth="131.0" text="Harimanda RM" AnchorPane.leftAnchor="126.0" AnchorPane.topAnchor="81.0">
+         <font>
+            <Font name="Poppins Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.66666666666669" layoutY="102.66666666666666" prefHeight="20.0" prefWidth="79.0" text="Numero  CE:" textFill="#0000008b" AnchorPane.leftAnchor="126.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="101.0" prefHeight="20.0" prefWidth="60.0" text="M001330" textFill="#0ec0e9" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font name="Poppins Regular" size="12.0" />
+         </font>
+      </Label>
+      <VBox layoutX="24.0" layoutY="153.0" prefHeight="380.0" prefWidth="544.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <AnchorPane prefHeight="173.0" prefWidth="551.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="10.0" prefHeight="20.0" prefWidth="131.0" text="Information" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="18.0" layoutY="30.0" prefHeight="113.0" prefWidth="527.0" style="-fx-background-color: E8EDF5; -fx-background-radius: 10;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <AnchorPane prefHeight="79.0" prefWidth="457.0">
+                           <children>
+                              <Pane layoutX="24.0" layoutY="8.0" prefHeight="63.0" prefWidth="67.0" styleClass="box-container-logo-param" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="8.0">
+                                 <children>
+                                    <Pane layoutX="14.0" layoutY="8.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-ToutStaff" />
+                                 </children>
+                              </Pane>
+                              <Label layoutX="99.0" layoutY="17.0" prefHeight="20.0" prefWidth="79.0" text="Personnels">
+                                 <font>
+                                    <Font name="Poppins SemiBold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="40.0" prefHeight="20.0" prefWidth="291.0" text="Voir les membres des personnels administratif" textFill="#4a739c">
+                                 <font>
+                                    <Font name="Poppins Regular" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="423.0" layoutY="27.0" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fleche" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="79.0" prefWidth="457.0">
+                           <children>
+                              <Pane layoutX="24.0" layoutY="8.0" prefHeight="63.0" prefWidth="67.0" styleClass="box-container-logo-param" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="8.0">
+                                 <children>
+                                    <Pane layoutX="14.0" layoutY="7.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-ToutMention" />
+                                 </children>
+                              </Pane>
+                              <Label layoutX="99.0" layoutY="17.0" prefHeight="20.0" prefWidth="79.0" text="Mentions">
+                                 <font>
+                                    <Font name="Poppins SemiBold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="40.0" prefHeight="20.0" prefWidth="291.0" text="Ensemble des mentions existantes et Ajout" textFill="#4a739c">
+                                 <font>
+                                    <Font name="Poppins Regular" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="423.0" layoutY="27.0" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fleche" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="173.0" prefWidth="537.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="10.0" prefHeight="20.0" prefWidth="131.0" text="General" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="18.0" layoutY="30.0" prefHeight="113.0" prefWidth="527.0" style="-fx-background-color: E8EDF5; -fx-background-radius: 10;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <AnchorPane prefHeight="79.0" prefWidth="457.0">
+                           <children>
+                              <Pane layoutX="24.0" layoutY="8.0" prefHeight="63.0" prefWidth="67.0" styleClass="box-container-logo-param" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="8.0">
+                                 <children>
+                                    <Pane layoutX="14.0" layoutY="8.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-adduser" />
+                                 </children>
+                              </Pane>
+                              <Label layoutX="99.0" layoutY="17.0" prefHeight="20.0" prefWidth="79.0" text="Personnels">
+                                 <font>
+                                    <Font name="Poppins SemiBold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="40.0" prefHeight="20.0" prefWidth="291.0" text="Ajout de nouvelles utilisateurs" textFill="#4a739c">
+                                 <font>
+                                    <Font name="Poppins Regular" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="423.0" layoutY="27.0" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fleche" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="79.0" prefWidth="457.0">
+                           <children>
+                              <Pane layoutX="24.0" layoutY="8.0" prefHeight="63.0" prefWidth="67.0" styleClass="box-container-logo-param" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="8.0">
+                                 <children>
+                                    <Pane layoutX="14.0" layoutY="6.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-param" />
+                                 </children>
+                              </Pane>
+                              <Label layoutX="99.0" layoutY="17.0" prefHeight="20.0" prefWidth="100.0" text="Confidentialiter">
+                                 <font>
+                                    <Font name="Poppins SemiBold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="40.0" prefHeight="20.0" prefWidth="291.0" text="Verifier ou modifier les informations perso" textFill="#4a739c">
+                                 <font>
+                                    <Font name="Poppins Regular" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Pane layoutX="423.0" layoutY="27.0" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fleche" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="30.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

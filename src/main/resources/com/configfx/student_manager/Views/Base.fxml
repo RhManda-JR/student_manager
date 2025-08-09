@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelRoot" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.BaseController">
+   <children>
+      <AnchorPane layoutX="71.0" layoutY="77.0" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: D9D9D9;" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="199.0" layoutY="28.0" prefHeight="43.0" prefWidth="800.0" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane layoutX="30.0" layoutY="23.0" prefHeight="40.0" prefWidth="40.0" styleClass="logo-config" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="30.0" />
+                  <Label layoutX="84.0" layoutY="24.0" text="Student Manager" textFill="#6b6969" AnchorPane.bottomAnchor="21.33333333333333" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font name="Poppins Medium" size="20.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="706.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="icon-notif" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="29.0" AnchorPane.rightAnchor="68.66666666666667" AnchorPane.topAnchor="29.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Circle fill="DODGERBLUE" layoutX="725.0" layoutY="37.0" radius="6.0" stroke="#d9d9d9" strokeType="INSIDE" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="31.0" />
+                  <AnchorPane layoutX="475.0" layoutY="25.0" prefHeight="28.0" prefWidth="214.0" styleClass="input-search" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="106.33333333333334" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <Button layoutX="10.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="icon-search" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="3.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField layoutX="33.0" prefHeight="28.0" prefWidth="185.0" promptText="Recherche" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Poppins Regular" size="10.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="744.0" layoutY="19.0" prefHeight="40.0" prefWidth="40.0" styleClass="image-profile" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="24.66666666666667" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="19.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="29.0" layoutY="83.33333333333333" prefHeight="511.0" prefWidth="180.0" styleClass="sidebar" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="82.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="2.6666666666666665" layoutY="2.6666666666666665" prefHeight="205.0" prefWidth="177.0" spacing="4.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="5.0">
+               <children>
+                  <Button fx:id="btndashboard" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" stylesheets="@../src/style/ligthMode.css" text="Tableau de bord" textFill="#1ec090">
+                     <graphic>
+                        <Pane fx:id="icondash" prefHeight="27.0" prefWidth="25.0" styleClass="icon-dash" stylesheets="@../src/style/ligthMode.css" />
+                     </graphic>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="btn-navbar" />
+                        <String fx:value="select" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="btnlistetudiant" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" styleClass="btn-navbar" stylesheets="@../src/style/ligthMode.css" text="Liste Etudiant">
+                     <graphic>
+                        <Pane fx:id="iconlist" prefHeight="27.0" prefWidth="25.0" styleClass="icon-listeEt" stylesheets="@../src/style/ligthMode.css" />
+                     </graphic>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="btnparametre" alignment="TOP_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" styleClass="btn-navbar" stylesheets="@../src/style/ligthMode.css" text="Paramètre">
+                     <graphic>
+                        <Pane fx:id="iconparam" prefHeight="27.0" prefWidth="25.0" styleClass="icon-param" stylesheets="@../src/style/ligthMode.css" />
+                     </graphic>
+                     <font>
+                        <Font name="Poppins Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="btndeconnexion" alignment="TOP_LEFT" graphicTextGap="20.0" layoutX="1.0" layoutY="420.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" style="-fx-background-color: EDEBEB;" styleClass="btn-navbar" stylesheets="@../src/style/ligthMode.css" text="Déconnexion " AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+               <graphic>
+                  <Pane fx:id="iconlogout" prefHeight="27.0" prefWidth="25.0" styleClass="icon-logout" stylesheets="@../src/style/ligthMode.css" />
+               </graphic>
+               <font>
+                  <Font name="Poppins Regular" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="basepagepane" layoutX="219.0" layoutY="87.0" prefHeight="511.0" prefWidth="575.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="82.0" />
+   </children>
+</AnchorPane>

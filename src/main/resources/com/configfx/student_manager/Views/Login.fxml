@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="stageConfig" stylesheets="@../src/style/ligthMode.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="-35.0" layoutY="-14.0" prefHeight="600.0" prefWidth="469.0" style="-fx-background-radius: 14;" styleClass="bg-login-register" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="122.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0" styleClass="glass-box" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="200.0">
+               <children>
+                  <Label layoutX="24.0" layoutY="61.0" text="Universiter de fianarantsoa" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="24.0" layoutY="90.0" text="La faculete des sciences" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="117.0" text="Connaissance - Excellence - Rigueur" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="137.0" text="Un androit paisible ou les maths " textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="152.0" text="et la physique reigne" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="22.0" layoutY="16.0" mouseTransparent="true" prefHeight="40.0" prefWidth="40.0" styleClass="icon-circle" stylesheets="@../src/style/ligthMode.css" />
+               </children>
+               <effect>
+                  <GaussianBlur radius="24.61" />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="464.0" layoutY="137.0" prefHeight="600.0" prefWidth="336.0" style="-fx-background-color: white;" stylesheets="@../src/style/ligthMode.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="460.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="284.0" layoutY="9.666666666666666" mouseTransparent="true" prefHeight="40.0" prefWidth="40.0" styleClass="logo-config" stylesheets="@../src/style/ligthMode.css" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0" />
+            <AnchorPane fx:id="formLoginRegisterPane" layoutX="24.0" layoutY="57.333333333333336" prefHeight="533.0" prefWidth="300.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="57.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.66666666666667" layoutY="23.0" prefHeight="69.0" prefWidth="87.0" text="Bonjour!">
+                     <font>
+                        <Font name="Poppins Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="66.0" prefHeight="27.0" prefWidth="234.0" text="Pour se connecter avec votre compte . Renseignez votre ">
+                     <font>
+                        <Font name="Poppins Regular" size="8.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="76.0" prefHeight="27.0" prefWidth="234.0" text="nom d’utilisateur et votre mot de passe">
+                     <font>
+                        <Font name="Poppins Regular" size="8.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="36.0" layoutY="134.0" prefHeight="30.0" prefWidth="230.0" styleClass="input" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <children>
+                        <Pane layoutX="52.666666666666664" layoutY="9.666666666666666" prefHeight="30.0" prefWidth="2.0" style="-fx-background-color: A64F62; -fx-background-radius: 8;" AnchorPane.bottomAnchor="5.666666666666664" AnchorPane.leftAnchor="52.666666666666664" AnchorPane.topAnchor="9.666666666666666" />
+                        <TextField layoutX="59.0" layoutY="10.0" prefHeight="32.0" prefWidth="163.0" promptText="Votre nom d'utilisateur" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="6.666666666666664" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="8.666666666666657" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Poppins Regular" size="12.0" />
+                           </font></TextField>
+                        <Pane layoutX="11.333333333333332" layoutY="5.333333333333333" mouseTransparent="true" prefHeight="33.0" prefWidth="33.0" styleClass="icon-user" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="11.333333333333334" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="btnconnexion" layoutX="36.666666666666664" layoutY="265.6666666666667" mnemonicParsing="false" prefHeight="40.0" prefWidth="231.0" styleClass="btn-conn" stylesheets="@../src/style/ligthMode.css" text="Connexion" textFill="WHITE" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <font>
+                        <Font name="Poppins Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="34.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" styleClass="btn-mdp-oublier" stylesheets="@../src/style/ligthMode.css" text="Mots de passe oublier ?" textFill="#1687e4" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="120.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="35.0" layoutY="352.0" prefHeight="27.0" prefWidth="234.0" text="N'hesitez pas a nous contacter !!" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <font>
+                        <Font name="Poppins Regular" size="8.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="36.0" layoutY="366.0" prefHeight="27.0" prefWidth="234.0" text="harimandarm8@gmail.com" textAlignment="CENTER" textFill="#00c3ff" underline="true" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <font>
+                        <Font name="Poppins Regular" size="8.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="36.0" layoutY="378.0" prefHeight="27.0" prefWidth="234.0" text="Nathanhermana@gmail.com" textAlignment="CENTER" textFill="#00c3ff" underline="true" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <font>
+                        <Font name="Poppins Regular" size="8.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="34.0" layoutY="490.0" prefHeight="27.0" prefWidth="234.0" text="Copyrigth @2025" textFill="#988e8e80" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <font>
+                        <Font name="Poppins Regular" size="10.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="createAccount" layoutX="98.0" layoutY="313.0" mnemonicParsing="false" styleClass="btn-mdp-oublier" stylesheets="@../src/style/ligthMode.css" text="Creer un compte ?" textFill="#17e32f" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <AnchorPane layoutX="38.0" layoutY="188.0" prefHeight="40.0" prefWidth="231.0" styleClass="input" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="34.0">
+                     <children>
+                        <Pane layoutX="52.666666666666664" layoutY="9.666666666666666" prefHeight="30.0" prefWidth="2.0" style="-fx-background-color: A64F62; -fx-background-radius: 8;" AnchorPane.bottomAnchor="5.666666666666664" AnchorPane.leftAnchor="52.666666666666664" AnchorPane.topAnchor="9.666666666666666" />
+                        <Pane layoutX="11.333333333333332" layoutY="3.333333333333333" mouseTransparent="true" prefHeight="33.0" prefWidth="33.0" styleClass="icon-lock" stylesheets="@../src/style/ligthMode.css" AnchorPane.leftAnchor="11.333333333333332" />
+                        <PasswordField layoutX="63.0" layoutY="7.0" prefHeight="20.0" prefWidth="133.0" promptText="Votre mot de passe" style="-fx-background-color: transparent;">
+                           <font>
+                              <Font name="Poppins Regular" size="12.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="156.0" layoutY="10.0" mouseTransparent="true" prefHeight="40.0" prefWidth="40.0" styleClass="icon-facial" stylesheets="@../src/style/ligthMode.css" AnchorPane.topAnchor="10.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
