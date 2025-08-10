@@ -377,3 +377,70 @@
 .tabview{
     -fx-background-radius:0 0 10 10;
 }
+
+//FORMULAIRE
+
+.btn-container{
+    -fx-background-color:white;
+    -fx-background-radius:10 10 0 0;
+    -fx-border-radius:10 10 0 0;
+    -fx-border-size:2;
+    -fx-border-color:A89C9C A89C9C white A89C9C;
+}
+
+.btn-action{
+    -fx-background-color:white;
+    -fx-background-radius:6;
+    -fx-transition: all 1s ease-in-out;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 2);
+ }
+
+.btn-action:hover {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 3, 0, 0, 2);
+}
+
+.icon-photo{
+    -fx-background-image:url('../images/icon/image.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.icon-dossier{
+    -fx-background-image:url('../images/icon/dossier.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.icon-gomme{
+    -fx-background-image:url('../images/icon/gomme.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.icon-enregistrer{
+    -fx-background-image:url('../images/icon/enregistrer.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.icon-avertissement{
+    -fx-background-image:url('../images/icon/avertissement.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.icon-viewlist{
+    -fx-background-image:url('../images/icon/viewList.png');
+    -fx-background-color:transparent;
+    -fx-background-size:cover;
+}
+
+.inputform{
+    -fx-background-color:white;
+    -fx-background-radius:6;
+    -fx-border-radius:6;
+    -fx-border-size:1;
+    -fx-border-color:B8B8B8;
+}

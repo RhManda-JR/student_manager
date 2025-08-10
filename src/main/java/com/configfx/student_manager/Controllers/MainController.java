@@ -4,6 +4,7 @@ import animatefx.animation.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -24,26 +25,10 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        try {
-            FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("/com/configfx/student_manager/Views/Login.fxml")));
-            Parent root = loader.load();
-            LoginController loginController = loader.getController();
-            //            condition pour le login
-            loginController.btnconnexion.setOnMouseClicked(ev->{
-                // condition de login a implementer
-                // recuperer les donnees inscrit par l'utilisateur grace au controleur
-                //si les donnees sont correcte voici le code a executer
-
-                Stage stage = (Stage)loginController.btnconnexion.getScene().getWindow();
-                loadpage("Base",true,stage);
-            });
-            MainPane.getChildren().setAll(root);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        loadPageinANCHORPANE("Login",MainPane);
     }
 
-    public void loadpage(String pagename ,Boolean bool, Stage stage) {
+    public void loadpage(String pagename ,Boolean bool, Stage stage,AnchorPane pane) {
         try {
             FXMLLoader loader = new FXMLLoader(Objects.requireNonNull(getClass().getResource("/com/configfx/student_manager/Views/" + pagename + ".fxml")));
             Parent root = loader.load();
@@ -55,8 +40,13 @@ public class MainController implements Initializable {
             AnchorPane.setRightAnchor(root, 0.0);
 
             stage.resizableProperty().setValue(bool);
+            // Faire apparaitre la fenetre au centre
+            stage.centerOnScreen();
 
-            MainPane.getChildren().setAll(root);
+            //changement de l'Anchorpane statique en dynamique
+            //* Avant : MainPane
+            //* Apres la variable pane que j'ai mis en parametre
+            pane.getChildren().setAll(root);
             new FadeIn(root).play();
         } catch (IOException | NullPointerException e) {
             System.err.println("FXML non trouvé : " + pagename);
@@ -96,5 +86,21 @@ public class MainController implements Initializable {
             throw new RuntimeException(e);
         }
     }
+
+    // Prendre l'anchorpane le plus haut du hierarchie
+    public AnchorPane getOldestAnchorPane(Node node) {
+        Node current = node;
+        AnchorPane oldest = null;
+
+        while (current != null) {
+            if (current instanceof AnchorPane) {
+                oldest = (AnchorPane) current; // garde le dernier AnchorPane trouvé
+            }
+            current = current.getParent(); // on monte d’un niveau
+        }
+
+        return oldest; // c’est le plus vieux trouvé
+    }
+
 
 }

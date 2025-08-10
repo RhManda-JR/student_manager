@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -71,7 +72,13 @@ public class BaseController implements Initializable {
         });
 
         btndeconnexion.setOnMouseClicked(e->{
-            mainController.loadPageinANCHORPANE("Login",mainController.MainPane);
+            AnchorPane ap = (AnchorPane) basepagepane.getParent();
+            //le stage est pour prendre les proprieter du stage et
+            // restrindre l'utilisateur de ne pas redimontionner le stage
+            Stage stage = (Stage)ap.getScene().getWindow();
+            stage.setWidth(820);
+            stage.setHeight(600);
+            mainController.loadpage("Login",false,stage,ap);
             Selected(btndeconnexion,iconlogout,"logout");
         });
     }

@@ -5,6 +5,8 @@ import javafx.scene.control.*;
 import java.nio.file.*;
 import java.util.Optional;
 
+//pour demander le nom du fichier pdf a telecharger
+
 public class NomFichierDialog {
 
     public static String getNomFichierUnique(Path dossier) {

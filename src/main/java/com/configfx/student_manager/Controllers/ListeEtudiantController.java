@@ -10,6 +10,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -70,6 +71,15 @@ public class ListeEtudiantController implements Initializable {
     @FXML
     private Button btnSuppSelected;
 
+    @FXML
+    private Button handleclickajouter;
+
+
+    @FXML
+    private AnchorPane anchorepaneNode;
+
+
+    MainController mainController = new MainController();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -81,6 +91,15 @@ public class ListeEtudiantController implements Initializable {
     private void FonctionToExcecute() {
         SupprimerSelection();
         imprimerSelection();
+        ShowFormulaireAjouter();
+    }
+
+    private void ShowFormulaireAjouter() {
+        handleclickajouter.setOnMouseClicked(e ->{
+            AnchorPane ap = (AnchorPane) tabview.getParent();
+            AnchorPane ap2 = (AnchorPane) ap.getParent();
+            mainController.loadPageinANCHORPANE("FormulaireAjoutEtudiant",ap2);
+        });
     }
 
     public void LoadDataTable(){

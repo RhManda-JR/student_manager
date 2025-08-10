@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="511.0" prefWidth="575.0" styleClass="container" stylesheets="@../src/style/ligthMode.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.ListeEtudiantController">
+<AnchorPane fx:id="anchorepaneNode" prefHeight="511.0" prefWidth="575.0" styleClass="container" stylesheets="@../src/style/ligthMode.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.configfx.student_manager.Controllers.ListeEtudiantController">
    <children>
       <AnchorPane layoutX="14.0" prefHeight="42.0" prefWidth="547.0" styleClass="box-header" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
@@ -48,7 +48,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="194.0" layoutY="7.333333333333333" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: C7FEC5;" styleClass="btn-header" text="Ajouter" AnchorPane.bottomAnchor="7.333333333333332" AnchorPane.topAnchor="7.333333333333333">
+                  <Button fx:id="handleclickajouter" layoutX="194.0" layoutY="7.333333333333333" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: C7FEC5;" styleClass="btn-header" text="Ajouter" AnchorPane.bottomAnchor="7.333333333333332" AnchorPane.topAnchor="7.333333333333333">
                      <graphic>
                         <Pane prefHeight="20.0" prefWidth="20.0" styleClass="icon-ajout" />
                      </graphic>
